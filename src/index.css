@@ -37,3 +37,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+main {
+  height: calc(100% - 72px);
+}
