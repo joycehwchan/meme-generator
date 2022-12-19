@@ -10,7 +10,7 @@ const Header = () => {
           <h1 className="font-bold text-xl self-center">Meme Generator</h1>
         </div>
         <div className="text-xl hover:scale-110 cursor-pointer duration-200">
-          <a href="#">
+          <a href="https://github.com/joycehwchan/meme-generator">
             <i className="uil uil-github"></i>
           </a>
         </div>
