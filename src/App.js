@@ -4,7 +4,7 @@ import Meme from "./components/Meme";
 
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-amber-50">
       <Header />
       <Meme />
     </div>

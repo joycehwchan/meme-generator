@@ -7,7 +7,7 @@ const Header = () => {
       <div className="w-screen px-6 md:px-12 py-3 flex items-center justify-between bg-gradient-to-r from-amber-600 to-yellow-600">
         <div className="flex">
           <img src={logo} alt="logo" className="w-12" />
-          <h1 className="font-bold text-xl self-center">Meme Generator</h1>
+          <h1 className="font-bold text-xl self-center">Meme DIY</h1>
         </div>
         <div className="text-xl hover:scale-110 cursor-pointer duration-200">
           <a href="https://github.com/joycehwchan/meme-generator">
