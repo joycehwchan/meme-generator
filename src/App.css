@@ -12,6 +12,13 @@
   max-width: 80%;
   text-align: center;
   line-height: 1;
+  cursor: grab;
+}
+
+.meme__text:active {
+  cursor: grabbing;
+  scale: 1.04;
+  opacity: 0.8;
 }
 
 .text__top {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form";
+import Draggable from "react-draggable";
 
 const Meme = () => {
   const [allMemes, setAllMemes] = useState([]);
@@ -43,9 +44,13 @@ const Meme = () => {
   return (
     <main className="bg-amber-50">
       <Form getMeme={getMeme} addText={addText} meme={meme} />
-      <div className="container max-h-[70vh] w-fit relative mx-auto px-4 md:px-8 max-w-screen-lg flex justify-center py-6">
-        <p className="meme__text text__top">{meme.topText}</p>
-        <p className="meme__text text__bottom">{meme.bottomText}</p>
+      <div className="container mt-3 mx-auto max-h-[70vh] w-fit h-fit relative max-w-screen-lg flex justify-center">
+        <Draggable bounds="body">
+          <p className="meme__text text__top">{meme.topText}</p>
+        </Draggable>
+        <Draggable bounds="body">
+          <p className="meme__text text__bottom">{meme.bottomText}</p>
+        </Draggable>
         <img
           src={meme.image}
           alt="meme"
