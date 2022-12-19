@@ -48,9 +48,11 @@ const Meme = () => {
         <Draggable bounds="body">
           <p className="meme__text text__top">{meme.topText}</p>
         </Draggable>
+
         <Draggable bounds="body">
           <p className="meme__text text__bottom">{meme.bottomText}</p>
         </Draggable>
+
         <img
           src={meme.image}
           alt="meme"
