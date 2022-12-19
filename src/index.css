@@ -40,4 +40,6 @@ h6 {
 
 main {
   height: calc(100% - 72px);
+  overflow-y: auto;
+  padding-bottom: 3rem;
 }

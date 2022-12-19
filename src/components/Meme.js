@@ -42,9 +42,9 @@ const Meme = () => {
   }, []);
 
   return (
-    <main className="bg-amber-50">
+    <main>
       <Form getMeme={getMeme} addText={addText} meme={meme} />
-      <div className="container mt-3 mx-auto max-h-[70vh] w-fit h-fit relative max-w-screen-lg flex justify-center">
+      <div className="container mt-3 px-3 mx-auto max-h-[70vh] w-fit h-fit relative max-w-screen-lg flex justify-center">
         <Draggable bounds="body">
           <p className="meme__text text__top">{meme.topText}</p>
         </Draggable>

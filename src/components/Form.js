@@ -22,9 +22,12 @@ const Form = (props) => {
             placeholder="Bottom text"
           />
         </div>
-        <button className="mt-2 w-full rounded-md bg-amber-400 hover:bg-amber-600 hover:text-white cursor-pointer py-2">
-          Change meme image!
-        </button>
+
+        <div className="md:flex gap-2">
+          <button className="mt-2 w-full md:4/5 rounded-md bg-amber-400 hover:bg-amber-600 hover:text-white duration-200 cursor-pointer py-2">
+            Change meme image!
+          </button>
+        </div>
       </form>
     </div>
   );
